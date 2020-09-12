@@ -573,7 +573,7 @@ def writeSourceCode(filename, source_code):
 
     if python_version >= 300:
         with open(filename, "wb") as output_file:
-            output_file.write(source_code.encode("latin1"))
+            output_file.write(source_code.encode("utf-8"))
     else:
         with open(filename, "w") as output_file:
             output_file.write(source_code)
